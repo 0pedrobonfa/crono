@@ -9,7 +9,6 @@ html,body{
 }
 
 .container{
-    background-color: gray;
     height: 25em;
     width: 30em;
     display: flex;
@@ -18,22 +17,25 @@ html,body{
 }
 
 #cronometro{
-    background-color: red;
+    background-color: rgb(9, 120, 168);
+    border-radius: 5em;
     height: 5em;
     width: 30em;
     color: black;
     display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 600;
     font-size:xx-large;
 
 }
 
 #seconds{
-    margin-left: 1em;
+    margin-left: 0.1em;
 }
 #minutes{
-    margin-left: 1em;
+    margin-left: 0.1em;
 }
 #hours{
-    margin-right: 1em;
+    margin-right: 0.1em;
 }

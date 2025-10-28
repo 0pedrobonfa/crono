@@ -5,17 +5,32 @@ let hours_element = document.getElementById("hours");;
 
 function incrementSeconds(){
     seconds+= 1;
-    seconds_element.innerText = seconds;
+    if(seconds<=9){
+        seconds_element.innerText = '0' + seconds;
+
+    }else{
+        seconds_element.innerText = seconds;
+    }
     console.log(seconds);
 
-    if(seconds>=60){
+    if(seconds>59){
         seconds = 0;
         minutes++;
         minutes_element.innerText = minutes;
-    }else if(minutes>=60){
+        if(minutes<=9){
+            minutes_element.innerText = '0' + minutes;
+        }else{
+            minutes_element.innerText = minutes;
+        }
+    }else if(minutes>59){
         minutes = 0;
-        hours++;
-        hours_element.innerText = hours;
+        hours++
+
+        if(hours<=9){
+            hours_element.innerText = '0' + hours;
+        }else{
+            hours_element.innerText = hours;
+        }
 
     }
 }

@@ -1,0 +1,39 @@
+html,body{
+    background-color: rgb(25, 31, 52);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    
+}
+
+.container{
+    background-color: gray;
+    height: 25em;
+    width: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cronometro{
+    background-color: red;
+    height: 5em;
+    width: 30em;
+    color: black;
+    display: flex;
+    font-weight: 600;
+    font-size:xx-large;
+
+}
+
+#seconds{
+    margin-left: 1em;
+}
+#minutes{
+    margin-left: 1em;
+}
+#hours{
+    margin-right: 1em;
+}

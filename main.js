@@ -41,3 +41,5 @@ let hours = 0;
 
 let conter =  setInterval(incrementSeconds, 1000);
 
+//começa a implementar o botão de pause
+let btnPause = document.getElementById('btnPause');
